@@ -156,5 +156,5 @@ the string will be made up of alphanumeric characters only.
 
 module IntStringStack = MakeStack (struct
     type t = int * string
-    let serialize (i, s : t) = "(" ^ string_of_int i ^ ", " ^ "'" ^ s ^ "'" ^ ")"
+    let serialize (i, s : t) = "(" ^ string_of_int i ^ "," ^ "'" ^ s ^ "'" ^ ")"
   end);;
